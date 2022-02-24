@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <node pkg="inverted_pendulum_sim" type="inverted_pendulum_sim_node.py" name="InvertedPendulum" output="screen"
+          required="true"/>
+</launch>

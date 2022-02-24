@@ -1,0 +1,6 @@
+float64 curr_x
+float64 curr_x_dot
+float64 curr_x_dot_dot
+float64 curr_theta
+float64 curr_theta_dot
+float64 curr_theta_dot_dot

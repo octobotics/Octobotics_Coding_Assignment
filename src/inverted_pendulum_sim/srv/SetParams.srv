@@ -1,0 +1,12 @@
+float64 pendulum_mass
+float64 pendulum_length
+float64 cart_mass
+float64 theta_0
+float64 theta_dot_0
+float64 theta_dot_dot_0
+float64 cart_x_0
+float64 cart_x_dot_0
+float64 cart_x_dot_dot_0
+---
+bool success
+string message
