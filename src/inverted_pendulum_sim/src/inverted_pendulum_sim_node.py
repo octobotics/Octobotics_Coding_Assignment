@@ -45,7 +45,7 @@ BACKALPHA = 255
 Color palette
 '''
 WHITE = (255, 255, 255)
-GREEN = (0, 255, 0)
+GREEN = (51, 102, 0)
 RED = (128, 0, 0)
 ORANGE = (255, 165, 0)
 BLUE = (25, 25, 112)
@@ -180,8 +180,8 @@ class InvertedPendulum:
         for i in range(0, SCREENSIZE[1], GRIDSIZE):
             pg.draw.line(DISPSURFACE, GRIDCOLOR, (0, i), (SCREENSIZE[0], i))
 
-        pg.draw.line(DISPSURFACE, BLACK, (0, SCREENSIZE[1] / 2 + self.cart_h / 2 + 2 * self.wheel_r),
-                     (SCREENSIZE[0], SCREENSIZE[1] / 2 + + self.cart_h / 2 + 2 * self.wheel_r), 2)
+        pg.draw.line(DISPSURFACE, GREEN, (0, SCREENSIZE[1] / 2 + self.cart_h / 2 + 2 * self.wheel_r),
+                     (SCREENSIZE[0], SCREENSIZE[1] / 2 + + self.cart_h / 2 + 2 * self.wheel_r), 5)
         pg.draw.line(DISPSURFACE, BLACK, (SCREENSIZE[0] / 2, 0), (SCREENSIZE[0] / 2, SCREENSIZE[1]), 2)
 
     def cart(self):
