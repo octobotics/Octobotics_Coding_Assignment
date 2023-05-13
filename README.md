@@ -2,7 +2,14 @@
 
 This Github repository provides a base inverted pendulum simulation to be used as-is for the purposes of this assignment
 
+
+Send the assignment to: [ishan.b@octobotics.tech](ishan.b@octobotics.tech) , cc: [charith.r@octobotics.tech](charith.r@octobotics.tech)
+
 ![](src/inverted_pendulum_sim/media/inverted_pendulum_sim.png)
+
+## Instructions
+
+
 
 ### Dependencies
 
