@@ -57,6 +57,18 @@ source devel/setup.bash
 roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
 ```
 
+### Goal 2
+
+```bash
+roslaunch inverted_pendulum_controller sine_force.launch
+```
+
+### Goal 3
+
+```bash
+roslaunch inverted_pendulum_controller pid_force.launch
+```
+
 ### Published Topics
 - /inverted_pendulum/current_state ([inverted_pendulum_sim/CurrentState](https://github.com/octobotics/Octobotics_Coding_Assignment/blob/main/src/inverted_pendulum_sim/msg/CurrentState.msg)) - Publishes the current state of the inverted pendulum at 100 Hz
  

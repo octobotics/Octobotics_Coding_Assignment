@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # /* ------------- COPYRIGHT NOTICE ---------------
 #
 # Copyright (C) 2022 Octobotics Tech Pvt. Ltd. All Rights Reserved.
@@ -78,10 +78,10 @@ class InvertedPendulum:
         self.y = SCREENSIZE[1] / 2
         self.x_dot = 0
         self.x_d_dot = 0
-        self.theta = -pi / 3
+        self.theta = pi #-pi / 3
         self.theta_dot = 0
         self.theta_d_dot = 0
-        self.length = 200
+        self.length = 300 #200
         self.cart_m = 10
         self.pendulum_m = 10
         self.dt = 5.0 / FPS

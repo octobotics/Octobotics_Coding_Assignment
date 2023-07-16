@@ -2,4 +2,10 @@
 <launch>
     <node pkg="inverted_pendulum_sim" type="inverted_pendulum_sim_node.py" name="InvertedPendulum" output="screen"
           required="true"/>
+    <!-- <param name="pendulum_mass" value="2"/>
+    <param name="cart_mass" value="0.5"/>
+    <param name="pendulum_length" value="300"/>
+    <param name="theta_0" value="300"/>
+    <param name="x" value="300"/> 
+    </node> -->
 </launch>
