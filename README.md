@@ -57,6 +57,30 @@ source devel/setup.bash
 roslaunch inverted_pendulum_sim inverted_pendulum_sim.launch
 ```
 
+### For Docker
+- pull the image
+
+```bash
+docker pull nil69/inverted_pendulum_sim_image:latest
+```
+- ensure you have the necessary X11 utilities installed on your host machine. On a Debian-based system, you can install them using:
+
+```bash
+sudo apt-get install x11-xserver-utils
+```
+
+- you need to allow the Docker container to use your host's X server. This can be done by running:
+
+```bash
+xhost +local:docker
+```
+
+- run the docker image
+
+```bash
+docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" nil69/inverted_pendulum_sim_image
+```
+
 ### Published Topics
 - /inverted_pendulum/current_state ([inverted_pendulum_sim/CurrentState](https://github.com/octobotics/Octobotics_Coding_Assignment/blob/main/src/inverted_pendulum_sim/msg/CurrentState.msg)) - Publishes the current state of the inverted pendulum at 100 Hz
  
